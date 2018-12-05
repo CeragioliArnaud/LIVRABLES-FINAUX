@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C759D3E-91FB-49E3-A961-164AC9FF2F4D}</ProjectGuid>
+    <ProjectGuid>{997C1B3E-0A20-4F38-9788-49229537A3F0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Geppetto</RootNamespace>
     <AssemblyName>Geppetto</AssemblyName>
