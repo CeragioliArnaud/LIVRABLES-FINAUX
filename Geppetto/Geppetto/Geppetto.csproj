@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6EEBB5C2-9444-4B7F-9715-81524DB28BF6}</ProjectGuid>
+    <ProjectGuid>{5C759D3E-91FB-49E3-A961-164AC9FF2F4D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Geppetto</RootNamespace>
     <AssemblyName>Geppetto</AssemblyName>
@@ -75,12 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Default\" />
-    <Folder Include="Model\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
