@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Geppetto.Model
 {
-    class Customer
+    class Client
     {
     }
 }

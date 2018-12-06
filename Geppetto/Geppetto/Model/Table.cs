@@ -17,3 +17,4 @@ namespace Geppetto.Model
         private int posY { get; set; }
     }
 }
+}

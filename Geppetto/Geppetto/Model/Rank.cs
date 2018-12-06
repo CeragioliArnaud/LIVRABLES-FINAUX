@@ -8,12 +8,5 @@ namespace Geppetto.Model
 {
     class Rank
     {
-        private int numberOfTheRank { get; set; }
-        private List<Table> tables { get; set; }
-
-        private void AddTablesToList()
-        {
-
-        }
     }
 }

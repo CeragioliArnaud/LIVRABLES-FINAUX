@@ -8,7 +8,5 @@ namespace Geppetto.Model
 {
     class HeadWaiter
     {
-        private int rank;
-      private List<Waiter> waiters { get; set; }
     }
 }
