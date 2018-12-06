@@ -222,7 +222,13 @@ GO
 
 -- Requête utilisé pour ajouter des éléments (Le reste se met à jour avec le trigger)
 
+<<<<<<< HEAD
+UPDATE Product SET Stock = Stock + 5 /* Paramètre 1 */, LastAdd = 5 /* Paramètre 1 */ where ProductName = 'SEICHE' /* Paramètre 2 */
+=======
 --UPDATE Product SET Stock = Stock - 5 /* Paramètre 1 */, LastAdd = 5 /* Paramètre 1 */ where ProductName = 'SEICHE' /* Paramètre 2 */
+>>>>>>> 7df35fccb5227a1e297c7eb05a54375ba78acc86
 
 --SUITE A VENIR LORS DE LA CREATION D'UN TRIGGER QUI SUPPRIME LORSQUE UN ELEMENT EST PERIMEE
---LA REQUETE QUI RECUPERE L'ELEMENT POUR UNE RECETTE AYANT LA DATE DE PEREMPTION LA PLUS PROCHE;
+--La requête qui recupère l'élément pour une recette ayant la date de peremption la plus proche
+
+UPDATE DryArea SET StockD = StockD - 1 /* paramètre 1 */ WHERE DryPID = 3 /* paramètre 2 */ AND RottenDate = (SELECT MAX (RottenDate) FROM DryArea)
