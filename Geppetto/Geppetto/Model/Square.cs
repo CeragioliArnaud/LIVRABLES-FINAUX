@@ -8,5 +8,13 @@ namespace Geppetto.Model
 {
     class Square
     {
+        private HeadWaiter headWaiter { get; set; }
+        private List<Waiter> waiters { get; set; }
+        private List<Rank> ranks { get; set; }
+        private void AddRanksToList()
+        {
+
+        }
+        
     }
 }
