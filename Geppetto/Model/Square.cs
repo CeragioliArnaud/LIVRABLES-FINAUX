@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Geppetto.Model
+namespace Model
 {
     class Square
     {
+        private List<Rank> ranks;
+        private HeadWaiter headWaiter;
+        private List<Waiter> waiters;
+
     }
 }

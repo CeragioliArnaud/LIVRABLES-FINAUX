@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Geppetto.Model
+namespace Model
 {
-    class Table
+    public class Table
     {
-        private int numberOfTheTable { get; set; }
-        private Boolean available { get; set; }
-        private Boolean water { get; set; }
+        private int numberOfplace { get; set; }
+        private int numberTable { get; set; }
+        private Boolean avaible { get; set; }
         private Boolean bread { get; set; }
-        private int numberOfPlaces { get; set; }
+        private Boolean water { get; set; }
         private int posX { get; set; }
         private int posY { get; set; }
+
     }
-}
 }
