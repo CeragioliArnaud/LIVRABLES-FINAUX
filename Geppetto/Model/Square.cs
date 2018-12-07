@@ -12,5 +12,15 @@ namespace Model
         private HeadWaiter headWaiter;
         private List<Waiter> waiters;
 
+
+        public Square()
+        {
+            ranks.Add(new Rank());
+            ranks.Add(new Rank());
+
+            headWaiter = new HeadWaiter();
+            waiters.Add(new Waiter());
+            waiters.Add(new Waiter());
+        }
     }
 }

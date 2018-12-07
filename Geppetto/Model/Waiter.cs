@@ -12,9 +12,23 @@ namespace Model
         {
             //prendre les plats
 
-            //aller au postion des tables
+            //aller au postion de la table
 
             //poser les plats
+
+        }
+        private void TakeDishes()
+        {
+            //aller a la table
+            
+            //prendre les plats 
+
+            //les amener a la plonge
+
+        }
+        private void wait()
+        {
+            //mettre le thrad en attente
 
         }
     }

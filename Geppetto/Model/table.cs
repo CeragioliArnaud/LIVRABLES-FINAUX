@@ -8,7 +8,7 @@ namespace Model
 {
     public class Table
     {
-        private int numberOfplace { get; set; }
+        private int numberOfPlace { get; set; }
         private int numberTable { get; set; }
         private Boolean avaible { get; set; }
         private Boolean bread { get; set; }
@@ -16,5 +16,14 @@ namespace Model
         private int posX { get; set; }
         private int posY { get; set; }
 
+        public Table(int posX, int posY, int numberOfPlace)
+        {
+            this.avaible = true;
+            this.bread = false;
+            this.water = false;
+            this.posX = posX;
+            this.posY = posY;
+            this.numberOfPlace = numberOfPlace;
+        }
     }
 }
