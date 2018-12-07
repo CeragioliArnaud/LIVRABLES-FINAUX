@@ -8,6 +8,14 @@ namespace Model
 {
     class HeadWaiter
     {
+        private int posX { get; set; }
+        private int posY { get; set; }
+
+        public HeadWaiter(int posX, int posY)
+        {
+            this.posX = posX;
+            this.posY = posY;
+        }
 
     }
 }

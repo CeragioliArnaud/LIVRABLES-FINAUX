@@ -8,28 +8,13 @@ namespace Model
 {
     class Waiter
     {
-        private void DishLead(Table table)
+        private int posX { get; set; }
+        private int posY { get; set; }
+
+        public Waiter(int posX, int posY)
         {
-            //prendre les plats
-
-            //aller au postion de la table
-
-            //poser les plats
-
-        }
-        private void TakeDishes()
-        {
-            //aller a la table
-            
-            //prendre les plats 
-
-            //les amener a la plonge
-
-        }
-        private void wait()
-        {
-            //mettre le thrad en attente
-
+            this.posX = posX;
+            this.posY = posY;
         }
     }
 }
