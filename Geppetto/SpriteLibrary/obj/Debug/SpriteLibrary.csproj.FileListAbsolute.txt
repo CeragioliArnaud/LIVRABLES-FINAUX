@@ -1,0 +1,20 @@
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\bin\Debug\SpriteLibrary.XML
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\bin\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\bin\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.csprojAssemblyReference.cache
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.Properties.Resources.resources
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.SpriteEntryForm.resources
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.csproj.GenerateResource.cache
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.csproj.CoreCompileInputs.cache
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\SpriteLibrary\obj\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\bin\Debug\SpriteLibrary.XML
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\bin\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\bin\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.csprojAssemblyReference.cache
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.Properties.Resources.resources
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.SpriteEntryForm.resources
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.csproj.GenerateResource.cache
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.csproj.CoreCompileInputs.cache
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\SpriteLibrary\obj\Debug\SpriteLibrary.pdb

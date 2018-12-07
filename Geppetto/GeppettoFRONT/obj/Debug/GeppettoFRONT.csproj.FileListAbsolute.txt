@@ -1,0 +1,14 @@
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.csprojAssemblyReference.cache
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.Form1.resources
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.Properties.Resources.resources
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.GenerateResource.cache
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.CoreCompileInputs.cache
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bin\Debug\GeppettoFRONT.exe.config
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bin\Debug\GeppettoFRONT.exe
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bin\Debug\GeppettoFRONT.pdb
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bin\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bin\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bin\Debug\SpriteLibrary.xml
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.CopyComplete
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.exe
+C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.pdb

@@ -1,0 +1,6 @@
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Model\bin\Debug\Model.dll
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Model\bin\Debug\Model.pdb
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Model\obj\Debug\Model.dll
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Model\obj\Debug\Model.pdb
