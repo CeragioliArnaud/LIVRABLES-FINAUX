@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Geppetto.Model
+namespace Model
 {
     class Butler
     {
+
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Geppetto.Model
+namespace Controller
 {
-    class WasherUp
+    public class Class1
     {
     }
 }
