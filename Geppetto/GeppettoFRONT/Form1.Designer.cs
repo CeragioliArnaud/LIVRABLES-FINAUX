@@ -170,8 +170,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MainDrawingArea);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Chez GEPPETTO";
             ((System.ComponentModel.ISupportInitialize)(this.MainDrawingArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

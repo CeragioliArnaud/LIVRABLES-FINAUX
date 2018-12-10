@@ -11,12 +11,13 @@ namespace Model
     {
         private List<Square> squares;
         private Butler butler;
-
+        private Clerk clerk;
         public RestaurationRoom()
         {
-            this.butler = new Butler();
-            this.squares.Add(new Square());
-            this.squares.Add(new Square());
+            this.butler = new Butler(100,150);
+            this.squares.Add(new Square(1));
+            this.squares.Add(new Square(2));
+            this.clerk = new Clerk(25, 125);
         }
     }
 }

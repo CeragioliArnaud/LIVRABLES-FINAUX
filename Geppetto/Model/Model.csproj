@@ -42,14 +42,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Butler.cs" />
+<<<<<<< HEAD
     <Compile Include="Chef.cs" />
     <Compile Include="KitchenClerk.cs" />
+=======
+    <Compile Include="Clerk.cs" />
+    <Compile Include="Client.cs" />
+>>>>>>> 297c9547ea0e5a4dd238dfb75eb0cc5f89c2953c
     <Compile Include="HeadWaiter.cs" />
     <Compile Include="Kitchen.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Model.cs" />
+<<<<<<< HEAD
     <Compile Include="DishWashing.cs" />
     <Compile Include="WasherUp.cs" />
+=======
+    <Compile Include="Order.cs" />
+>>>>>>> 297c9547ea0e5a4dd238dfb75eb0cc5f89c2953c
     <Compile Include="Rank.cs" />
     <Compile Include="RestaurationRoom.cs" />
     <Compile Include="SousChef.cs" />

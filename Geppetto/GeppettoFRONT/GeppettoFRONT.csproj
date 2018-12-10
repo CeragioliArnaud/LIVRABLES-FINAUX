@@ -4,7 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{2A95C22A-3FEA-47F5-AB4B-201D23B27A03}</ProjectGuid>
+=======
+    <ProjectGuid>{9880E861-4652-4508-944B-37E311B376A2}</ProjectGuid>
+    <ProjectGuid>{9880E861-4652-4508-944B-37E311B376A2}</ProjectGuid>
+>>>>>>> 297c9547ea0e5a4dd238dfb75eb0cc5f89c2953c
     <OutputType>WinExe</OutputType>
     <RootNamespace>GeppettoFRONT</RootNamespace>
     <AssemblyName>GeppettoFRONT</AssemblyName>
@@ -60,18 +65,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -82,22 +87,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{712773b3-2eb8-44cd-90c5-8bcbfc17f5a3}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SpriteLibrary\SpriteLibrary.csproj">
       <Project>{fc04405b-2bc1-42ca-8410-a30f9baf4b6c}</Project>
       <Name>SpriteLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DwarfSprites.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Link.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BlackMage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhiteMage.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Irish_Tavern.wav" />

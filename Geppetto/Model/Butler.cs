@@ -8,6 +8,13 @@ namespace Model
 {
     class Butler
     {
+        private int posX { get; set; }
+        private int posY { get; set; }
 
+        public Butler(int posX, int posY)
+        {
+            this.posX = posX;
+            this.posY = posY;
+        }
     }
 }
