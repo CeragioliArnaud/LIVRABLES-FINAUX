@@ -61,51 +61,11 @@ namespace GeppettoFRONT.Properties {
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BlackMage {
-            get {
-                object obj = ResourceManager.GetObject("BlackMage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DwarfSprites {
-            get {
-                object obj = ResourceManager.GetObject("DwarfSprites", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Irish_Tavern {
             get {
                 return ResourceManager.GetStream("Irish_Tavern", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Link {
-            get {
-                object obj = ResourceManager.GetObject("Link", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhiteMage {
-            get {
-                object obj = ResourceManager.GetObject("WhiteMage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

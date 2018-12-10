@@ -4,3 +4,9 @@ C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.cspro
 C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
 C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.dll
 C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.pdb
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\bin\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\bin\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\bin\Debug\SpriteLibrary.xml
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.Properties.Resources.resources
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.csproj.GenerateResource.cache

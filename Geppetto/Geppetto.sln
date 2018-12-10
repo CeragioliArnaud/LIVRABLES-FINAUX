@@ -3,23 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{712773B3-2EB8-44CD-90C5-8BCBFC17F5A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{D893FC67-83CC-4D35-A1B3-21A300B07509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteLibrary", "SpriteLibrary\SpriteLibrary.csproj", "{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "GeppettoFRONT\View.csproj", "{9B0EC030-C01C-422C-B9B4-11182D6AC64D}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "Geppetto\View.csproj", "{F60ED3E2-FDD2-45FA-9F9A-36EBFFF529E2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{712773B3-2EB8-44CD-90C5-8BCBFC17F5A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{D893FC67-83CC-4D35-A1B3-21A300B07509}"
->>>>>>> 97cb636ccd7f8609d44aaada472167f14dae4063
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeppettoFRONT", "GeppettoFRONT\GeppettoFRONT.csproj", "{9B0EC030-C01C-422C-B9B4-11182D6AC64D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeppettoFRONT", "GeppettoFRONT\GeppettoFRONT.csproj", "{88B49C6E-2D22-4DF4-9530-18F677071EEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteLibrary", "SpriteLibrary\SpriteLibrary.csproj", "{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}"
 EndProject
@@ -29,13 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
-=======
-		{F60ED3E2-FDD2-45FA-9F9A-36EBFFF529E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F60ED3E2-FDD2-45FA-9F9A-36EBFFF529E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F60ED3E2-FDD2-45FA-9F9A-36EBFFF529E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F60ED3E2-FDD2-45FA-9F9A-36EBFFF529E2}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 97cb636ccd7f8609d44aaada472167f14dae4063
 		{712773B3-2EB8-44CD-90C5-8BCBFC17F5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{712773B3-2EB8-44CD-90C5-8BCBFC17F5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{712773B3-2EB8-44CD-90C5-8BCBFC17F5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,27 +25,14 @@ Global
 		{D893FC67-83CC-4D35-A1B3-21A300B07509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D893FC67-83CC-4D35-A1B3-21A300B07509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D893FC67-83CC-4D35-A1B3-21A300B07509}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-<<<<<<< HEAD
+		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> caf3943
-		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
->>>>>>> 97cb636ccd7f8609d44aaada472167f14dae4063
-=======
-		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> caf3943
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
