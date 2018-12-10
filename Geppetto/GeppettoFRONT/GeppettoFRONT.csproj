@@ -4,11 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-<<<<<<< HEAD
     <ProjectGuid>{9880E861-4652-4508-944B-37E311B376A2}</ProjectGuid>
-=======
-    <ProjectGuid>{88B49C6E-2D22-4DF4-9530-18F677071EEF}</ProjectGuid>
->>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90
+    <ProjectGuid>{9880E861-4652-4508-944B-37E311B376A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GeppettoFRONT</RootNamespace>
     <AssemblyName>GeppettoFRONT</AssemblyName>

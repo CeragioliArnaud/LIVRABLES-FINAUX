@@ -8,18 +8,32 @@ namespace Model
 {
     class Square
     {
-        //do we need a specific number for the 
-       // private int numberSquare { get; set; }
+        private int numberSquare { get; set; }
         private List<Rank> ranks;
         private HeadWaiter headWaiter;
         private List<Waiter> waiters;
 
 
-        public Square(/*int numberSquare*/)
+        public Square(int numberSquare)
         {
-            //this.numberSquare = numberSquare;
-            ranks.Add(new Rank());
-            ranks.Add(new Rank());
+            switch (numberSquare)
+            {
+                case 1:
+                    ranks.Add(new Rank(1));
+                    ranks.Add(new Rank(2));
+                    break;
+                case 2:
+                    ranks.Add(new Rank(3));
+                    ranks.Add(new Rank(4));
+                    break;
+                default:
+                    this.ranks = null;
+                    break;
+           
+            }
+            this.numberSquare = numberSquare;
+           
+            
 
             headWaiter = new HeadWaiter(50,50);
             waiters.Add(new Waiter(10,20));

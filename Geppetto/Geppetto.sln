@@ -7,17 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{D893FC67-83CC-4D35-A1B3-21A300B07509}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteLibrary", "SpriteLibrary\SpriteLibrary.csproj", "{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "GeppettoFRONT\View.csproj", "{9B0EC030-C01C-422C-B9B4-11182D6AC64D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeppettoFRONT", "GeppettoFRONT\GeppettoFRONT.csproj", "{9880E861-4652-4508-944B-37E311B376A2}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeppettoFRONT", "GeppettoFRONT\GeppettoFRONT.csproj", "{88B49C6E-2D22-4DF4-9530-18F677071EEF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteLibrary", "SpriteLibrary\SpriteLibrary.csproj", "{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}"
->>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,18 +27,10 @@ Global
 		{D893FC67-83CC-4D35-A1B3-21A300B07509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D893FC67-83CC-4D35-A1B3-21A300B07509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D893FC67-83CC-4D35-A1B3-21A300B07509}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
-		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88B49C6E-2D22-4DF4-9530-18F677071EEF}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC04405B-2BC1-42CA-8410-A30F9BAF4B6C}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B0EC030-C01C-422C-B9B4-11182D6AC64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,8 +39,6 @@ Global
 		{9880E861-4652-4508-944B-37E311B376A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9880E861-4652-4508-944B-37E311B376A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9880E861-4652-4508-944B-37E311B376A2}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
