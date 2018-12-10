@@ -42,11 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Butler.cs" />
+    <Compile Include="Chef.cs" />
+    <Compile Include="KitchenClerk.cs" />
     <Compile Include="HeadWaiter.cs" />
+    <Compile Include="Kitchen.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Model.cs" />
+    <Compile Include="DishWashing.cs" />
+    <Compile Include="WasherUp.cs" />
     <Compile Include="Rank.cs" />
     <Compile Include="RestaurationRoom.cs" />
+    <Compile Include="SousChef.cs" />
     <Compile Include="Square.cs" />
+    <Compile Include="StorageArea.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Waiter.cs" />
