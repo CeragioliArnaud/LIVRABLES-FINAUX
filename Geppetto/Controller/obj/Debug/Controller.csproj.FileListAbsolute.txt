@@ -4,9 +4,18 @@ C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.cspro
 C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
 C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.dll
 C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.pdb
+<<<<<<< HEAD
 D:\Exia\année 3\bite\Geppetto\Controller\bin\Debug\Controller.dll
 D:\Exia\année 3\bite\Geppetto\Controller\bin\Debug\Controller.pdb
 D:\Exia\année 3\bite\Geppetto\Controller\obj\Debug\Controller.csprojAssemblyReference.cache
 D:\Exia\année 3\bite\Geppetto\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
 D:\Exia\année 3\bite\Geppetto\Controller\obj\Debug\Controller.dll
 D:\Exia\année 3\bite\Geppetto\Controller\obj\Debug\Controller.pdb
+=======
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\bin\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\bin\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\bin\Debug\SpriteLibrary.xml
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.Properties.Resources.resources
+C:\Users\arnaud\Desktop\Projet C#\Geppetto\Controller\obj\Debug\Controller.csproj.GenerateResource.cache
+>>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90

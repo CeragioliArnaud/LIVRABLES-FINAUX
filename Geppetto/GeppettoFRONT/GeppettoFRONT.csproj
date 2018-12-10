@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{9880E861-4652-4508-944B-37E311B376A2}</ProjectGuid>
+=======
+    <ProjectGuid>{88B49C6E-2D22-4DF4-9530-18F677071EEF}</ProjectGuid>
+>>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90
     <OutputType>WinExe</OutputType>
     <RootNamespace>GeppettoFRONT</RootNamespace>
     <AssemblyName>GeppettoFRONT</AssemblyName>
@@ -60,18 +64,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -90,18 +94,6 @@
       <Project>{fc04405b-2bc1-42ca-8410-a30f9baf4b6c}</Project>
       <Name>SpriteLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DwarfSprites.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Link.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BlackMage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhiteMage.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Irish_Tavern.wav" />

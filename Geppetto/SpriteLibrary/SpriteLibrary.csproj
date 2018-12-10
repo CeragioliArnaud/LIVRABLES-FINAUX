@@ -63,7 +63,10 @@
     <Compile Include="Sprite.cs" />
     <Compile Include="SpriteController.cs" />
     <Compile Include="SpriteDatabase.cs" />
+<<<<<<< HEAD
     <Compile Include="SpriteEntryForm.cs" />
+=======
+>>>>>>> 61eeb8f5a3ee1fce137e1ace3810d11fd2543d90
     <Compile Include="SpriteEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
