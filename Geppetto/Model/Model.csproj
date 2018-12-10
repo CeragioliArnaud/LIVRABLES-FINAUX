@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Butler.cs" />
+    <Compile Include="Clerk.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="HeadWaiter.cs" />
     <Compile Include="Model.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Rank.cs" />
     <Compile Include="RestaurationRoom.cs" />
     <Compile Include="Square.cs" />

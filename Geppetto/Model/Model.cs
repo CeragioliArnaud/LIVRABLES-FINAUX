@@ -8,6 +8,13 @@ namespace Model
 {
     class Model
     {
+        private RestaurationRoom restaurationRoom;
+        private List<Order> orders; 
+
+        public Model()
+        {
+            restaurationRoom = new RestaurationRoom();
+        }
 
     }
 }

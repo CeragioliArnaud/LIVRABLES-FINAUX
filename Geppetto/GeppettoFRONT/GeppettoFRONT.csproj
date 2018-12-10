@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B0EC030-C01C-422C-B9B4-11182D6AC64D}</ProjectGuid>
+    <ProjectGuid>{9880E861-4652-4508-944B-37E311B376A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GeppettoFRONT</RootNamespace>
     <AssemblyName>GeppettoFRONT</AssemblyName>
@@ -82,6 +82,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{712773b3-2eb8-44cd-90c5-8bcbfc17f5a3}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SpriteLibrary\SpriteLibrary.csproj">
       <Project>{fc04405b-2bc1-42ca-8410-a30f9baf4b6c}</Project>
       <Name>SpriteLibrary</Name>

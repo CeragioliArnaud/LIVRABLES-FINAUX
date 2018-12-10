@@ -12,3 +12,17 @@ C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\bi
 C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.CopyComplete
 C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.exe
 C:\Users\arnaud\Desktop\PROJET C#2\Gestion des scripts (images)\GeppettoFRONT\obj\Debug\GeppettoFRONT.pdb
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\bin\Debug\GeppettoFRONT.exe.config
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\bin\Debug\GeppettoFRONT.exe
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\bin\Debug\GeppettoFRONT.pdb
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\bin\Debug\SpriteLibrary.dll
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\bin\Debug\SpriteLibrary.pdb
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\bin\Debug\SpriteLibrary.xml
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.csprojAssemblyReference.cache
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.Form1.resources
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.Properties.Resources.resources
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.GenerateResource.cache
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.CoreCompileInputs.cache
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.csproj.CopyComplete
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.exe
+D:\Exia\année 3\bite\Geppetto\GeppettoFRONT\obj\Debug\GeppettoFRONT.pdb
