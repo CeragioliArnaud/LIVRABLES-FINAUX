@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using SpriteLibrary;
+using System.Threading;
+using System;
+using System.Threading.Tasks;
 
 namespace Controller
 {
-    
 
     public class CreationSalle
     {
 
         Commandes tasksS = new Commandes();
+
 
         /// Musiciens /// 3
         public void CreateMusicians(SpriteController MySpriteController)
@@ -161,6 +157,7 @@ namespace Controller
             Chief.AutomaticallyMoves = true;
             Chief.CannotMoveOutsideBox = true;
             Chief.PutBaseImageLocation(new Point(1050, 110));
+            Chief.SpriteInitializes += tasksC.ClientLeave;
             Chief.SetSize(new Size(36, 36));
             Chief.MovementSpeed = 10;
         }
@@ -193,30 +190,79 @@ namespace Controller
 
         public void CreateClient(int empNumber, SpriteController MySpriteController)
         {
-            Sprite[] Client = new Sprite[empNumber];
-            for (int i = 0; i < empNumber; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Client[i] = new Sprite(new Point(96, 0), MySpriteController,
-                    Properties.Resources.Customers, 32, 32, 200, 3);
-                }
-                else
-                {
-                    Client[i] = new Sprite(new Point(96, 96), MySpriteController,
-                    Properties.Resources.Customers, 32, 32, 200, 3);
-                }
-                Client[i].SetName("Client" + i.ToString());
-                Client[i].AutomaticallyMoves = true;
-                Client[i].CannotMoveOutsideBox = true;
-                Client[i].PutBaseImageLocation(new Point(1375, 900));
-                Client[i].SetSize(new Size(36, 36));
-                Client[i].MovementSpeed = 10;
-                
-                Client[i].SpriteInitializes += tasksCl.GoToButler;
-                while (!Client[i].SpriteReachedEndPoint) { }
-            }
+            ThreadPool.QueueUserWorkItem(new WaitCallback(delegate (object state){ PoolStore(empNumber, MySpriteController); }), null);
+            Console.WriteLine("Main thread does some work, then sleeps.");
+            Thread.Sleep(1000);
         }
+
+        static void PoolStore(int empNumber, SpriteController MySpriteController)
+        {
+            // No state object was passed to QueueUserWorkItem, so stateInfo is null.
+            Sprite Client = new Sprite(new Point(96, 0), MySpriteController,
+                Properties.Resources.Customers, 32, 32, 200, 3);
+            Client.SetName("Chef");
+            Client.AutomaticallyMoves = true;
+            Client.CannotMoveOutsideBox = true;
+            Client.PutBaseImageLocation(new Point(1375, 900));
+            Client.SetSize(new Size(36, 36));
+            Client.MovementSpeed = 10;
+            Console.WriteLine("Hello from the thread pool.");
+
+        }
+        /*Sprite[] Client = new Sprite[empNumber];
+        for (int i = 0; i < empNumber; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Client[i] = new Sprite(new Point(96, 0), MySpriteController,
+                Properties.Resources.Customers, 32, 32, 200, 3);
+            }
+            else
+            {
+                Client[i] = new Sprite(new Point(96, 96), MySpriteController,
+                Properties.Resources.Customers, 32, 32, 200, 3);
+            }
+            Client[i].SetName("Client" + i.ToString());
+            Client[i].AutomaticallyMoves = true;
+            Client[i].CannotMoveOutsideBox = true;
+            Client[i].PutBaseImageLocation(new Point(1375, 900));
+            Client[i].SetSize(new Size(36, 36));
+            Client[i].MovementSpeed = 10;
+            tasksCl.GoToButler(Client[i]); //On va plutot faire un appel de méthode plutot qu'un event car il y a complication 
+        }*/
+
     }
-}
+    /*
+    class SpriteTest
+    {
+        public long CreationTime;
+        public int Name;
+        public int ThreadNum;
+    }
+
+    public class Exemple
+    {
+        public void Main()
+        {
+            Task[] taskArray = new Task[10];
+            for (int i = 0; i < taskArray.Length; i++)
+            {
+                taskArray[i] = Task.Factory.StartNew((Object obj) => { SpriteTest client = obj as SpriteTest;
+                    if (client == null)
+                        return;
+
+                    client.ThreadNum = Thread.CurrentThread.ManagedThreadId;
+                },
+                                                      new SpriteTest() { Name = i, CreationTime = DateTime.Now.Ticks });
+            }
+            Task.WaitAll(taskArray);
+            foreach (var task in taskArray)
+            {
+                var data = task.AsyncState as SpriteTest;
+                if (data != null)
+                    Console.WriteLine("Task #{0} created at {1}, ran on thread #{2}.",
+                                      data.Name, data.CreationTime, data.ThreadNum);
+            }
+        }*/
+    }
 ////CREER LES OBJETS DU MODEL ET GERER SELON POSITION, LES EVENTS

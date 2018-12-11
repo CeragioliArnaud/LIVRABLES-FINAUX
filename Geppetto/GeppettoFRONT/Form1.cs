@@ -30,6 +30,7 @@ namespace GeppettoFRONT
             CreationSalle restaurantRoom = new CreationSalle();
             CreationCuisine restaurantKit = new CreationCuisine();
             CreationClient client = new CreationClient();
+            //Exemple ex = new Exemple();
 
             SoundPlayer simpleSound = new SoundPlayer(GeppettoFRONT.Properties.Resources.Irish_Tavern);
             simpleSound.Play();
@@ -69,6 +70,7 @@ namespace GeppettoFRONT
 
             // Client 
             client.CreateClient(10, MySpriteController);
+
 
         }
     }
