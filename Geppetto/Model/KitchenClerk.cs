@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Butler
+    class KitchenClerk
     {
+        private StorageArea storageArea;
+
         private int posX { get; set; }
         private int posY { get; set; }
 
-        public Butler(int posX, int posY)
+        public KitchenClerk()
+        {
+            this.storageArea = new StorageArea();
+        }
+
+        public KitchenClerk(int posX, int posY)
         {
             this.posX = posX;
             this.posY = posY;
