@@ -1,0 +1,52 @@
+USE [Geppetto]
+GO
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Recipy](
+	[RecipyID] [int] IDENTITY(1,1) NOT NULL,
+	[RecipyName] [char(100)] NULL,
+	[Tomates] [int] NULL,
+	[Salades] [int] NULL,
+	[Pâtes] [int] NULL,
+	[Seiche] [int] NULL,
+	[Fromages] [int] NULL,
+	[Courgettes] [int] NULL,
+	[Aubergines] [int] NULL,
+	[Mascarpone] [int] NULL,
+	[PâtePizza] [int] NULL,
+	[HuileOlive] [int] NULL,
+	[Ail] [int] NULL,
+	[Oignon] [int] NULL,
+	[Jambon] [int] NULL,
+	[Poulet] [int] NULL,
+	[Farine] [int] NULL,
+	[Beurre] [int] NULL,
+	[Asperges] [int] NULL,
+	[PommeDeTerre] [int] NULL,
+	[Oeufs] [int] NULL,
+	[Champignons] [int] NULL,
+	[Riz] [int] NULL,
+	[PetitsPois] [int] NULL,
+	[Boeuf] [int] NULL,
+	[Melon] [int] NULL,
+	[Artichauds] [int] NULL,
+	[ChouFleur] [int] NULL,
+	[Pommes] [int] NULL,
+	[Chocolat] [int] NULL,
+	[Biscuit] [int] NULL,
+	[Lait] [int] NULL,
+	[Framboises] [int] NULL,
+	[Citron] [int] NULL,
+	[Amandes] [int] NULL,
+	[Sucre] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[DryID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
