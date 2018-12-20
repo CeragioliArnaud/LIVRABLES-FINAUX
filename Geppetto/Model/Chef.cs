@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
-    class Chef
+    public class Chef
     {
         private Menu menu;
         private StorageArea storageArea;
-        private SousChef sousChef;
+        private Cook cook;
 
-        private int posX { get; set; }
-        private int posY { get; set; }
+        public int posX { get; set; }
+        public int posY { get; set; }
 
         public Chef()
         {
-            this.sousChef = new SousChef();
+            this.cook = new Cook(posX,posY);
         }
 
         public Chef(int posX, int posY)

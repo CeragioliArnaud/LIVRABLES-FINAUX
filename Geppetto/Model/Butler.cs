@@ -1,15 +1,17 @@
-﻿using System;
+﻿using SpriteLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
-    class Butler
+    public class Butler
     {
-        private int posX { get; set; }
-        private int posY { get; set; }
+        public int posX { get; set; }
+        public int posY { get; set; }
+        public Sprite sprite { get; set; }
 
         public Butler(int posX, int posY)
         {

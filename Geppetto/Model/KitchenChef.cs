@@ -7,17 +7,20 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    public class HeadWaiter
+    public class KitchenChef
     {
         public int posX { get; set; }
         public int posY { get; set; }
 
-        public Sprite sprite { get; set; }
-        public HeadWaiter(int posX, int posY)
+        public Sprite sprite;
+
+        public List<Order> commands;
+    
+        public KitchenChef(int posX, int posY)
         {
+            commands = new List<Order>();
             this.posX = posX;
             this.posY = posY;
         }
-
     }
 }

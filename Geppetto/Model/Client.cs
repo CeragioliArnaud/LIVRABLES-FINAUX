@@ -1,23 +1,33 @@
-﻿using System;
+﻿using SpriteLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
-    class Client
+    public class Client
     {
-        private int tableNumber { get; set; }
-        private Boolean reserve { get; set; }
-        private int addition { get; set; }
-        private int numberClients { get; set; }
+        public int tableNumber { get; set; }
+        public Boolean reserve { get; set; }
+        public Boolean ordered { get; set; }
+        public int addition { get; set; }
+        public int numberClients { get; set; }
+        public Sprite sprite { get; set; }
+        public Etat state ;
 
-        public Client(Boolean reserve, int numberClients)
+
+        public enum Etat { Arrive, attente, assis, commande, mange, finisRepas, payer , Fini };
+
+
+        public Client(int numberClients)
         {
             this.numberClients = numberClients;
-            this.reserve = reserve;
+            this.reserve = false;
+            state = Etat.Arrive;
             this.addition = 0;
+            ordered = false;
         }
     }
 }

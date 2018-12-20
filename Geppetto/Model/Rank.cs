@@ -4,57 +4,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
-    class Rank
+    public class Rank
     {
-        private List<Table> tables;
+        public List<Table> tables;
+
         public Rank(int rank)
         {
+            tables = new List<Table>();
+
+
             switch (rank)
             {
                 case 1:
-                    this.tables = new List<Table>
-                    {
-                        new Table(92, 316, 4),
-                        new Table(220, 316, 4),
-                        new Table(248, 316, 4),
-                        new Table(476, 316, 4),
+                    tables.Add(new Table(92, 316, 4, 1));
+                    tables.Add(new Table(220, 316, 4, 2));
+                    tables.Add(new Table(348, 316, 4, 3));
+                    tables.Add(new Table(476, 316, 4, 4));
 
-                        new Table(92, 376, 6),
-                        new Table(220, 376, 6),
-                        new Table(348, 376, 6),
-
-                        new Table(444, 408, 2),
-                        new Table(508, 408, 2)
-                    };
+                    tables.Add(new Table(92, 376, 6, 5));
+                    tables.Add(new Table(220, 376, 6, 6));
+                    tables.Add(new Table(348, 376, 6, 7));
+                    tables.Add(new Table(444, 408, 2, 8));
+                    tables.Add(new Table(508, 408, 2, 9));
                     break;
                 case 2:
-                    this.tables = new List<Table>
-                    {
-                        new Table(2, 1, 2),
-                        new Table(2, 2, 2),
-                        new Table(2, 3, 4),
-                        new Table(2, 4, 4)
-                    };
+                    tables.Add(new Table(188, 536, 8, 10));
+                    tables.Add(new Table(284, 504, 8, 11));
+                    tables.Add(new Table(412, 504, 6, 12));
+                    tables.Add(new Table(510, 536, 2, 13));
+
+                    tables.Add(new Table(156, 662, 10, 14));
+                    tables.Add(new Table(284, 662, 2, 15));
+                    tables.Add(new Table(412, 630, 2, 16));
+                    tables.Add(new Table(510, 630, 2, 17));
+
                     break;
                 case 3:
-                    this.tables = new List<Table>
-                    {
-                        new Table(3, 1, 2),
-                        new Table(3, 2, 2),
-                        new Table(3, 3, 4),
-                        new Table(3, 4, 4)
-                    };
+                    tables.Add(new Table(128, 800, 4, 18));
+                    tables.Add(new Table(256, 768, 2, 19));
+                    tables.Add(new Table(256, 832, 2, 20));
+                    tables.Add(new Table(384, 736, 6, 21));
+                    tables.Add(new Table(510, 736, 6, 22));
+                    tables.Add(new Table(992, 472, 10, 23));
+                    break;
+                case 4:
+                    tables.Add(new Table(1090, 476, 8, 24));
+                    tables.Add(new Table(1180, 440, 8, 25));
+                    tables.Add(new Table(1340, 440, 8, 26));
+                    tables.Add(new Table(1466, 440, 2, 27));
+                    tables.Add(new Table(1466, 504, 2, 28));
+                    tables.Add(new Table(832, 600, 4, 29));
+                    tables.Add(new Table(958, 600, 4, 30));
+                    tables.Add(new Table(1090, 600, 4, 31));
+                    tables.Add(new Table(1342, 600, 4, 32));
+                    tables.Add(new Table(1468, 600, 4, 33));
                     break;
                 default:
-                    this.tables = new List<Table>
-                    {
-                        new Table(4, 1, 2),
-                        new Table(4, 2, 2),
-                        new Table(4, 3, 4),
-                        new Table(4, 4, 4)
-                    };
                     break;
             }
         }

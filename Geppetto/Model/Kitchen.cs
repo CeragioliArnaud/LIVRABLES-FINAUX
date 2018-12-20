@@ -4,26 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
 
-    class Kitchen
+    public class Kitchen
     {
-        private Chef chef;
-        private DishWashing dishWashing;
-        private StorageArea storageArea;
-        private SousChef sousChef;
-        private KitchenClerk kitchenClerk;
-        private WasherUp washerUp;
+
+        public KitchenChef kitchenChef;
+        public List<Cook> cooks;
+        public WasherUp plong;
+        public List<Order> order;
 
         public Kitchen()
         {
-            this.dishWashing = new DishWashing();
-            chef = new Chef(50, 60);
-            washerUp = new WasherUp(40, 30);
-            sousChef = new SousChef(30, 50);
-            kitchenClerk = new KitchenClerk(40, 30);
+            cooks = new List<Cook>();
+
+            plong = new WasherUp(765, 110);
+
+            kitchenChef = new KitchenChef(1055,110);
+
+            cooks.Add(new Cook(955, 110));
+            cooks.Add(new Cook(1212,110));
+
+            order = new List<Order>();
+
+            
         }
-        
+       
     }
 }
+

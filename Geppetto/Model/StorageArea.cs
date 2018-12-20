@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
-    class StorageArea
+    public class StorageArea
     {
         private List<string> ingredients = new List<string>();
 

@@ -1,268 +1,160 @@
-﻿using System.Drawing;
-using SpriteLibrary;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
 using System.Threading;
-using System;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using SpriteLibrary;
 
-namespace Controller
+namespace Project
 {
-
     public class CreationSalle
     {
+        Model model;
+        Form1 form;
+        //Commandes tasksS = new Commandes();
 
-        Commandes tasksS = new Commandes();
 
-
-        /// Musiciens /// 3
-        public void CreateMusicians(SpriteController MySpriteController)
+        public CreationSalle(Model model, Form1 form)
         {
-            Sprite Pianiste = new Sprite(new Point(192, 224), MySpriteController,
-                    Properties.Resources.DwarfSprites, 32, 32, 200, 3);
-            Pianiste.AutomaticallyMoves = true;
-            Pianiste.PutBaseImageLocation(new Point(190, 110));
-            Pianiste.SetSize(new Size(38, 38));
-
-            Sprite Musi1 = new Sprite(new Point(0, 160), MySpriteController,
-                    Properties.Resources.BlackMage, 32, 32, 200, 3);
-            Musi1.AutomaticallyMoves = true;
-            Musi1.PutBaseImageLocation(new Point(245, 155));
-            Musi1.SetSize(new Size(38, 38));
-
-            Sprite Musi2 = new Sprite(new Point(0, 160), MySpriteController,
-                    Properties.Resources.WhiteMage, 32, 32, 200, 3);
-            Musi2.AutomaticallyMoves = true;
-            Musi2.PutBaseImageLocation(new Point(135, 155));
-            Musi2.SetSize(new Size(38, 38));
+            this.model = model;
+            this.form = form;
         }
 
-        /// Commis de salle /// 1
-        public void CreateCommisS(SpriteController MySpriteController)
+        /// Maitre d'hôtel /// 1
+        public void CreateButler()
         {
-            Sprite CommisS = new Sprite(new Point(192, 0), MySpriteController,
-                    Properties.Resources.DwarfSprites, 32, 32, 200, 3);
-            CommisS.SetName("CommisS");
-            CommisS.AutomaticallyMoves = true;
-            CommisS.CannotMoveOutsideBox = true;
-            CommisS.PutBaseImageLocation(new Point(1085, 550));
-            CommisS.SetSize(new Size(36, 36));
-            CommisS.MovementSpeed = 10;
+            model.restaurationRoom.butler.sprite = new Sprite(new Point(0, 64), form.spriteController, Geppetto.Properties.Resources.DwarfSprites, 32, 32, 200, 2);
+            model.restaurationRoom.butler.sprite.SetName("Butler");
+            model.restaurationRoom.butler.sprite.PutBaseImageLocation(new Point(model.restaurationRoom.butler.posX, model.restaurationRoom.butler.posY));
+            model.restaurationRoom.butler.sprite.CannotMoveOutsideBox = true;
+            model.restaurationRoom.butler.sprite.SetSize(new Size(32, 32));
+            model.restaurationRoom.butler.sprite.MoveTo(new Point(model.restaurationRoom.butler.posX, model.restaurationRoom.butler.posY));
+            model.restaurationRoom.butler.sprite.AutomaticallyMoves = true;
+            model.restaurationRoom.butler.sprite.MovementSpeed = 10;
         }
 
         /// Serveurs /// 4
-        public void CreateWaiters(int empNumber, SpriteController MySpriteController)
+        public void CreateWaiters()
         {
-            Sprite[] Serveur = new Sprite[empNumber];
-            for (int i=0; i <= empNumber-1; i++)
+            foreach (Square square in model.restaurationRoom.squares)
             {
-                Serveur[i] = new Sprite(new Point(288, 128), MySpriteController,
-                        Properties.Resources.DwarfSprites, 32, 32, 200, 3);
-                Serveur[i].SetName("Serveur" + i.ToString());
-                Serveur[i].AutomaticallyMoves = true;
-                Serveur[i].CannotMoveOutsideBox = true;
-                //Serveur.SpriteInitializes += tasksS.GoToKitchenPLAT;
-                Serveur[i].SetSize(new Size(36, 36));
-                Serveur[i].MovementSpeed = 10;
-                if (i < 2)
+                foreach (Waiter waiter in square.waiters)
                 {
-                    Serveur[i].PutBaseImageLocation(new Point(385+ (48 * (i - 1)), 210));   
-                }
-                else
-                {
-                    Serveur[i].PutBaseImageLocation(new Point(1410+ (48 * (i - 1)), 725));
+                    waiter.sprite = new Sprite(new Point(288, 128), form.spriteController, Geppetto.Properties.Resources.DwarfSprites, 32, 32, 200, 3);
+                    waiter.sprite.SetName("Waiter");
+                    waiter.sprite.PutBaseImageLocation(new Point(waiter.posX, waiter.posY));
+                    waiter.sprite.CannotMoveOutsideBox = true;
+                    waiter.sprite.SetSize(new Size(32, 32));
+                    waiter.sprite.MoveTo(new Point(waiter.posX, waiter.posY));
+                    waiter.sprite.AutomaticallyMoves = true;
+                    waiter.sprite.MovementSpeed = 10;
                 }
             }
         }
 
-        /// Chef de rang /// 2
-        public void CreateLChief(int empNumber, SpriteController MySpriteController)
+        // Chef de rang // 2
+        public void CreateHeadWaiter()
         {
-            Sprite[] ChefRang = new Sprite[empNumber];
-            for (int i = 0; i <= empNumber - 1; i++)
+            foreach (Square square in model.restaurationRoom.squares)
             {
-                ChefRang[i] = new Sprite(new Point(0, 128), MySpriteController,
-                    Properties.Resources.DwarfSprites, 32, 32, 200, 3);
-                ChefRang[i].SetName("ChefDeRang" + i.ToString());
-                ChefRang[i].AutomaticallyMoves = true;
-                ChefRang[i].CannotMoveOutsideBox = true;
-                ChefRang[i].SetSize(new Size(36, 36));
-                ChefRang[i].MovementSpeed = 10;
-
-                //Le + dans la position X serait à changer si on veut pas qu'ils se mangent des éléments/murs/tables
-                if (i % 2 == 0)
-                {
-                    ChefRang[i].PutBaseImageLocation(new Point(666 + (48 * (i - 1)), 800));
-                }
-                else
-                {
-                    ChefRang[i].PutBaseImageLocation(new Point(1180 + (48 * (i - 1)), 635));
-                }
+                square.headWaiter.sprite = new Sprite(new Point(0, 128), form.spriteController, Geppetto.Properties.Resources.DwarfSprites, 32, 32, 200, 3);
+                square.headWaiter.sprite.SetName("HServeur");
+                square.headWaiter.sprite.PutBaseImageLocation(new Point(square.headWaiter.posX, square.headWaiter.posY));
+                square.headWaiter.sprite.CannotMoveOutsideBox = true;
+                square.headWaiter.sprite.SetSize(new Size(32, 32));
+                square.headWaiter.sprite.MoveTo(new Point(square.headWaiter.posX, square.headWaiter.posY));
+                square.headWaiter.sprite.AutomaticallyMoves = true;
+                square.headWaiter.sprite.MovementSpeed = 10;
             }
-        }
-
-        /// Maître d'hôtel /// 1
-        public void CreateButler(SpriteController MySpriteController)
-        {
-            Sprite MaitHot = new Sprite(new Point(0, 64), MySpriteController,
-                Properties.Resources.DwarfSprites, 32, 32, 200, 2);
-            MaitHot.SetName("Butler");
-            MaitHot.AutomaticallyMoves = true;
-            MaitHot.CannotMoveOutsideBox = true;
-            MaitHot.PutBaseImageLocation(new Point(1310, 755));
-            MaitHot.SetSize(new Size(36, 36));
-            MaitHot.MovementSpeed = 10;
         }
     }
 
     public class CreationCuisine
     {
-        Commandes tasksC = new Commandes();
+        Model model;
+        Form1 form;
+        //Commandes tasksS = new Commandes();
+
+
+        public CreationCuisine(Model model, Form1 form)
+        {
+            this.model = model;
+            this.form = form;
+        }
+
 
         /// Commis Cuisine /// 2
-        public void CreateCommisC(int empNumber, SpriteController MySpriteController)
+        public void CreateCook()
         {
-            Sprite[] CommisC = new Sprite[empNumber];
-            for (int i = 0; i <= empNumber - 1; i++)
+            foreach (Cook cook in model.kitchen.cooks)
             {
-                CommisC[i] = new Sprite(new Point(286, 128), MySpriteController,
-                Properties.Resources.Link, 32, 32, 200, 3);
-                CommisC[i].SetName("CommisC" + i.ToString());
-                CommisC[i].AutomaticallyMoves = true;
-                CommisC[i].CannotMoveOutsideBox = true;
-                CommisC[i].PutBaseImageLocation(new Point(1400, 230+(48*i)));
-                CommisC[i].SetSize(new Size(36, 36));
-                CommisC[i].MovementSpeed = 10;
+                cook.sprite = new Sprite(new Point(96, 0), form.spriteController, Geppetto.Properties.Resources.Link, 32, 32, 200, 3);
+                cook.sprite.SetName("Cook");
+                cook.sprite.PutBaseImageLocation(new Point(cook.posX, cook.posY));
+                cook.sprite.CannotMoveOutsideBox = true;
+                cook.sprite.SetSize(new Size(32, 32));
+                cook.sprite.MoveTo(new Point(cook.posX, cook.posY));
+                cook.sprite.AutomaticallyMoves = true;
+                cook.sprite.MovementSpeed = 10;
             }
-                
-        }
-        
-        /// Plongeur /// 1
-        public void CreatePlong(SpriteController MySpriteController)
-        {
-            Sprite Plongeur = new Sprite(new Point(96, 128), MySpriteController,
-                Properties.Resources.Link, 32, 32, 200, 3);
-            Plongeur.SetName("Plongeur");
-            Plongeur.AutomaticallyMoves = true;
-            Plongeur.CannotMoveOutsideBox = true;
-            Plongeur.PutBaseImageLocation(new Point(765, 110));
-            Plongeur.SetSize(new Size(36, 36));
-            Plongeur.MovementSpeed = 10;
         }
 
-        /// Chef de cuisine /// 1
-        public void CreateChief(SpriteController MySpriteController)
+        public void CreateChief()
         {
-            Sprite Chief = new Sprite(new Point(286, 0), MySpriteController,
-                Properties.Resources.Link, 32, 32, 200, 3);
-            Chief.SetName("Chef");
-            Chief.AutomaticallyMoves = true;
-            Chief.CannotMoveOutsideBox = true;
-            Chief.PutBaseImageLocation(new Point(1050, 110));
-            Chief.SpriteInitializes += tasksC.ClientLeave;
-            Chief.SetSize(new Size(36, 36));
-            Chief.MovementSpeed = 10;
+            model.kitchen.kitchenChef.sprite = new Sprite(new Point(286, 0), form.spriteController, Geppetto.Properties.Resources.Link, 32, 32, 200, 3);
+            model.kitchen.kitchenChef.sprite.SetName("Chef");
+            model.kitchen.kitchenChef.sprite.PutBaseImageLocation(new Point(model.kitchen.kitchenChef.posX, model.kitchen.kitchenChef.posY));
+            model.kitchen.kitchenChef.sprite.CannotMoveOutsideBox = true;
+            model.kitchen.kitchenChef.sprite.SetSize(new Size(32, 32));
+            model.kitchen.kitchenChef.sprite.MoveTo(new Point(model.kitchen.kitchenChef.posX, model.kitchen.kitchenChef.posY));
+            model.kitchen.kitchenChef.sprite.AutomaticallyMoves = true;
+            model.kitchen.kitchenChef.sprite.MovementSpeed = 10;
         }
 
-        /// Chef de rang - Cuisinier /// 2
-        public void CreateCook(int empNumber, SpriteController MySpriteController)
+        public void CreatePlong()
         {
-            Sprite[] Cook = new Sprite[empNumber];
-            for (int i = 0; i <= empNumber - 1; i++)
-            {
-                Cook[i] = new Sprite(new Point(96, 0), MySpriteController,
-                    Properties.Resources.Link, 32, 32, 200, 3);
-                Cook[i].SetName("Cuisinier" + i.ToString());
-                Cook[i].AutomaticallyMoves = true;
-                Cook[i].CannotMoveOutsideBox = true;
-                Cook[0].PutBaseImageLocation(new Point(955, 110));
-                if (i == 1)
-                {
-                    Cook[1].PutBaseImageLocation(new Point(1212, 110));
-                }
-                Cook[i].SetSize(new Size(36, 36));
-                Cook[i].MovementSpeed = 10;
-            }
-        }    
+            model.kitchen.plong.sprite = new Sprite(new Point(96, 128), form.spriteController, Geppetto.Properties.Resources.Link, 32, 32, 200, 3);
+            model.kitchen.plong.sprite.SetName("Plongeur");
+            model.kitchen.plong.sprite.PutBaseImageLocation(new Point(model.kitchen.plong.posX, model.kitchen.plong.posY));
+            model.kitchen.plong.sprite.AutomaticallyMoves = true;
+            model.kitchen.plong.sprite.CannotMoveOutsideBox = true;
+            model.kitchen.plong.sprite.SetSize(new Size(36, 36));
+            model.kitchen.plong.sprite.MovementSpeed = 10;
+        }
     }
 
     public class CreationClient
     {
-        Commandes tasksCl = new Commandes();
+        Model model;
+        Form1 form;
+        //Commandes tasksS = new Commandes();
 
-        public void CreateClient(int empNumber, SpriteController MySpriteController)
+
+        public CreationClient(Model model, Form1 form)
         {
-            ThreadPool.QueueUserWorkItem(new WaitCallback(delegate (object state){ PoolStore(empNumber, MySpriteController); }), null);
-            Console.WriteLine("Main thread does some work, then sleeps.");
-            Thread.Sleep(1000);
+            this.model = model;
+            this.form = form;
         }
 
-        static void PoolStore(int empNumber, SpriteController MySpriteController)
+        public void CreateClient()
         {
-            // No state object was passed to QueueUserWorkItem, so stateInfo is null.
-            Sprite Client = new Sprite(new Point(96, 0), MySpriteController,
-                Properties.Resources.Customers, 32, 32, 200, 3);
-            Client.SetName("Chef");
-            Client.AutomaticallyMoves = true;
-            Client.CannotMoveOutsideBox = true;
-            Client.PutBaseImageLocation(new Point(1375, 900));
-            Client.SetSize(new Size(36, 36));
-            Client.MovementSpeed = 10;
-            Console.WriteLine("Hello from the thread pool.");
-
+            foreach(Client client in model.restaurationRoom.clients)
+            {
+                client.sprite = new Sprite(new Point(286, 0), form.spriteController, Geppetto.Properties.Resources.Link, 32, 32, 200, 3);
+                client.sprite.SetName("Client");
+                client.sprite.PutBaseImageLocation(new Point(1375, 900));
+                client.sprite.CannotMoveOutsideBox = true;
+                client.sprite.SetSize(new Size(32, 32));
+                client.sprite.AutomaticallyMoves = true;
+                client.sprite.MovementSpeed = 10;
+            }
+            
         }
-        /*Sprite[] Client = new Sprite[empNumber];
-        for (int i = 0; i < empNumber; i++)
-        {
-            if (i % 2 == 0)
-            {
-                Client[i] = new Sprite(new Point(96, 0), MySpriteController,
-                Properties.Resources.Customers, 32, 32, 200, 3);
-            }
-            else
-            {
-                Client[i] = new Sprite(new Point(96, 96), MySpriteController,
-                Properties.Resources.Customers, 32, 32, 200, 3);
-            }
-            Client[i].SetName("Client" + i.ToString());
-            Client[i].AutomaticallyMoves = true;
-            Client[i].CannotMoveOutsideBox = true;
-            Client[i].PutBaseImageLocation(new Point(1375, 900));
-            Client[i].SetSize(new Size(36, 36));
-            Client[i].MovementSpeed = 10;
-            tasksCl.GoToButler(Client[i]); //On va plutot faire un appel de méthode plutot qu'un event car il y a complication 
-        }*/
 
     }
-    /*
-    class SpriteTest
-    {
-        public long CreationTime;
-        public int Name;
-        public int ThreadNum;
-    }
+}
 
-    public class Exemple
-    {
-        public void Main()
-        {
-            Task[] taskArray = new Task[10];
-            for (int i = 0; i < taskArray.Length; i++)
-            {
-                taskArray[i] = Task.Factory.StartNew((Object obj) => { SpriteTest client = obj as SpriteTest;
-                    if (client == null)
-                        return;
-
-                    client.ThreadNum = Thread.CurrentThread.ManagedThreadId;
-                },
-                                                      new SpriteTest() { Name = i, CreationTime = DateTime.Now.Ticks });
-            }
-            Task.WaitAll(taskArray);
-            foreach (var task in taskArray)
-            {
-                var data = task.AsyncState as SpriteTest;
-                if (data != null)
-                    Console.WriteLine("Task #{0} created at {1}, ran on thread #{2}.",
-                                      data.Name, data.CreationTime, data.ThreadNum);
-            }
-        }*/
-    }
-////CREER LES OBJETS DU MODEL ET GERER SELON POSITION, LES EVENTS

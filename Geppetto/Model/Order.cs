@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Project
 {
-    class Order
+    public class Order
     {
-        private List<String> orders;
+        public List<string> plats { get; set; }
+
+        public Order()
+        {
+            plats = new List<string>();
+        }
     }
 }

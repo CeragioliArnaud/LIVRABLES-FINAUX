@@ -1,0 +1,28 @@
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.csprojAssemblyReference.cache
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.Properties.Resources.resources
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.csproj.GenerateResource.cache
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.csproj.CoreCompileInputs.cache
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Project.Form1.resources
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\bin\Debug\Geppetto.exe.config
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\bin\Debug\Geppetto.exe
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\bin\Debug\Geppetto.pdb
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\bin\Debug\SpriteLibrary.dll
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\bin\Debug\SpriteLibrary.pdb
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\bin\Debug\SpriteLibrary.xml
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.csproj.CopyComplete
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.exe
+C:\Users\33609\Pictures\projet C#\Geppetto\Geppetto\obj\Debug\Geppetto.pdb
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.csprojAssemblyReference.cache
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.Properties.Resources.resources
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Project.Form1.resources
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.csproj.GenerateResource.cache
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.csproj.CoreCompileInputs.cache
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.exe
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.pdb
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\bin\Debug\Geppetto.exe.config
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\bin\Debug\Geppetto.exe
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\bin\Debug\Geppetto.pdb
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\bin\Debug\SpriteLibrary.dll
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\bin\Debug\SpriteLibrary.pdb
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\bin\Debug\SpriteLibrary.xml
+C:\Users\arnaud\Desktop\ProjetC#TRUE\Geppetto\obj\Debug\Geppetto.csproj.CopyComplete
